@@ -1,0 +1,86 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Emment:\
+lorem + tab to create fake content to test the layout of the page\
+\
+CSS \
+adjust the spacing and height of row( spacing interline)\
+font-family to change the font\
+font-size to change the size of the character (default is 16 px)\
+line-height to change the interline spacing, 1, 1.5, 2\
+text-align to align the text to right, left, or center \
+text-indent: value in pixel\
+text-decoration: to add underline, line-through or something else\
+border: thickness (in pixel) style (solid) color ( black). Note that all the attribute must be given\
+\
+\
+When you don\'92t give the setting of the CSS, the browser automatically load the default setting.\
+To clear the default setting,\
+\
+Inline is inline with the paragraph.\
+	For  <a>, its display selector is display inline\
+Block fill the whole window (Display Block)\
+We can use \'93height\'94 to adjust the distance between content\
+	This also change the UX because it enlarge the effective area of  the link \
+\
+Layout of the webpage\
+Divide the web into multiple block\
+Div: display block\
+Span: display inline\
+\
+Descendant Selector\
+If we only want to change the specific label in the div / span, in CSS, we can add the label after the selector\
+	i.e. .style2 h2\{color:blue;\}\
+\
+\
+Padding / Margin\
+To adjust the margin, we can use \'93padding\'94 or \'93margin\'94  in CSS\
+	i.e. .box\{ padding: 50px;\}.\
+Margin pushes outward\
+Padding push inward\
+\
+Box model\
+Only padding and border changes the size of the element. The padding will add the thickness outside the element\
+\
+If we want to center the content, we can use a class as a wrap to include the whole content and then make the margin-left and margin-right auto. It can also be margin: 0 auto;. This means the margin of top and bottom is 0. The left and right is auto. \
+Multiple way to achieve the same goal:\
+1. margin-left: auto;\
+    margin-right: auto;\
+2. margin: 0 auto;\
+3. margin: 0 auto 0 auto; (top right bottom left)\
+\
+Note that we need to give the width of the element so that the program can adjust the margin according to the width.\
+If the sub-element (included in the main element) is a block element, it will extend the whole block to the boundary of the main element.\
+\
+CSS3\
+box-sizing: border-box; make the the size of the box fixed\
+*\{\} to make the whole block can use the same attribute\
+Prefix\
+-moz- for old firefox\
+-webkit- for old chrome\
+check canIuse\
+ \
+\
+Multiple column layout\
+If need to put blocks side by side, we need to use float.\
+	i.e. .box1\{float:left\}\
+	      .box2\{float:left\}\
+but if the total width of the block is larger than the main width, one of the block will go to second row\
+\
+If we want to add another block below the float, we need to clear the float so that the block won\'92t be overlaying with the floating blocks.s\
+	i.e. In html, add a class = \'93clearfix\'93\
+	      In CSS, add .clearfix\{clear:both\} after the float\
+\
+If we want the size of div changes as the content changes, we should not fix the height\
+To create a space between two float block, we can use margin\
+To create space between the content and the block, we can use padding\
+If we are not sure the size of the content, we should include the menu and content in another block so that they can push other block together.\
+\
+\
+To center the text horizontally, use text-align:center;\
+To center the text vertically, use text-height: (the same value in the height); or use padding-top and padding-bottom\
+}

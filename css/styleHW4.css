@@ -1,0 +1,131 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+
+.wrap{
+	width: 1000px;
+	margin:0 auto;
+}
+
+.header{
+	background: red;
+	margin-bottom: 10px;
+	height: 100px;
+}
+
+.img_style{
+	float: left;
+}
+/*ul and li is different*/
+
+.header ul{
+	float: right;
+	margin-top: 40px;
+
+}
+.header a{
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+.clearfix{
+	clear: both;
+}
+
+.topmenu{
+	height: 20px;
+}
+
+
+
+.topmenu ul li a{
+  background:yellow;
+  float: left;
+	display: block;
+	width: 200px;
+	text-decoration: none;
+  text-align:center;
+}
+
+.main{
+	width: 1000px;
+	margin-bottom: 10px;
+}
+
+/*left_menu width is 200px*/
+.left_menu{
+	float: left;
+	background: black;
+	color: white;
+	margin-right: 20px;
+	width: 180px;
+	padding: 10px;
+}
+
+/*content width is 500px*/
+.content{
+	float: left;
+	width:480px;
+	background: pink;
+	margin-right: 20px;
+	padding:10px;
+
+}
+/*right_menu width is 300px*/
+.right_menu{
+	float: left;
+	width:300px;
+	background:blue; 
+	padding:10px;
+}
+
+.footer{
+	background: grey;
+	height: 100px;
+}
